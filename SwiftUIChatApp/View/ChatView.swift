@@ -24,9 +24,11 @@ struct ChatView: View {
                     ForEach(chatHelper.realTimeMessages, id: \.self) { msg in
                         MessageView(currentMessage: msg)
                     }
+                    .listRowSeparator(.hidden, edges: .bottom)
                 }
+                .listStyle(.plain)
                 HStack {
-                    TextField("Message...", text: $typingMessage)
+                    TextField("How can I help?...", text: $typingMessage)
                         .textFieldStyle(RoundedBorderTextFieldStyle())
                         .frame(minHeight: CGFloat(30))
                     Button(action: sendMessage) {
