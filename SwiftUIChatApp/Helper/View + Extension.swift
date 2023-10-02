@@ -2,7 +2,7 @@
 //  View + Extension.swift
 //  SwiftUIChatApp
 //
-//  Created by GIGL iOS on 02/10/2023.
+//  Created by Tes on 02/10/2023.
 //
 
 import SwiftUI
